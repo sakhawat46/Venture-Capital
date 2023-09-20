@@ -51,14 +51,13 @@
 
       <nav id="navbar" class="navbar">
         <ul>
-          <li><a class="nav-link scrollto " href="#hero">Home</a></li>
+          <li><a class="nav-link scrollto " href="{% url "venture_app:home" %}">Home</a></li>
           <li class="dropdown"><a class="nav-link scrollto" href="#about"> <span> About Us </span><i class="bi bi-chevron-down"></i></a>
 
           <ul>
             <li><a href="#">Who We Are</a></li>
             <li><a href="#">Our Purpose</a></li>
-            <li><a href="#">Our Values</a></li>
-            <li><a href="#">What We Do</a></li>
+            <li><a href="{% url "venture_app:people" %}">Pepole</a></li>
           </ul>
 
           </li>
@@ -67,27 +66,25 @@
 
           <ul>
             <li><a href="#">Let Us Know</a></li>
-            <li><a href="#">Information</a></li>
-            <li><a href="#">Enquiries</a></li>
+            <li><a href="{% url "venture_app:contact_info" %}">Information</a></li>
           </ul>
 
           </li>
 
 
-          <li class="dropdown"><a class="nav-link scrollto" href="#about"> <span> Portfolio </span><i class="bi bi-chevron-down"></i></a>
+          <li class="dropdown"><a class="nav-link scrollto" href="#"> <span> Portfolio </span><i class="bi bi-chevron-down"></i></a>
 
           <ul>
-            <li><a href="#">Our Portfolio</a></li>
+            <li><a href="{% url "venture_app:portfolio" %}">Our Portfolio</a></li>
             <li><a href="#">Investment Process</a></li>
           </ul>
 
 
           <li class="dropdown"><a href="#"><span>Media</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
-              <li><a href="#">News</a></li>
+              <li><a href="{% url "venture_app:news" %}">News</a></li>
               <li><a href="#">Gallery</a></li>
               <li><a href="#">Events</a></li>
-              <li><a href="#">Notice</a></li>
             </ul>
           </li>
           <li><a class="nav-link scrollto" href="#contact">Invest Now</a></li>

@@ -5,8 +5,9 @@ app_name = "venture_app"
 
 urlpatterns = [
     path('', views.home, name='home'),
-    # path('login/', views.customerlogin, name='login'),
-    # path('logout/', views.logout_user, name='logout'),
-    # path('profile/', views.profile, name='profile'),
+    path('contact_info/', views.contact_info, name='contact_info'),
+    path('people/', views.people, name='people'),
+    path('portfolio/', views.portfolio, name='portfolio'),
+    path('news/', views.news, name='news'),
 
 ]
